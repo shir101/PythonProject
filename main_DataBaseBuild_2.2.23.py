@@ -290,7 +290,7 @@ if __name__ == '__main__':
     
     #building database1 for all the lineages 
     database1 = {}  # global dictionary for database 1
-    for lineage in avail_Lineages[:5]:
+    for lineage in avail_lineages[:5]:
         accessions = dc.getAccessionsByLineage(lineage) #### take accessions of a certain lineage
         # accessions = []
         # print(accessions)
