@@ -290,7 +290,7 @@ if __name__ == '__main__':
     
     #building database1 for all the lineages 
     database1 = {}  # global dictionary for database 1
-    for lineage in avail_Lineages[:5]
+    for lineage in avail_Lineages[:5]:
         accessions = dc.getAccessionsByLineage(lineage) #### take accessions of a certain lineage
         # accessions = []
         # print(accessions)
@@ -312,7 +312,6 @@ if __name__ == '__main__':
         print("**************************")
         print("We can see here a dictionary of 1 lineage and its representative genomes")
         database1.update({lineage: reps__lineage})
-        print(database1)
 
         #delete the files in the data/raw of the lineage after inserting it to database1
         for filename in os.listdir(directory):
@@ -321,3 +320,4 @@ if __name__ == '__main__':
             if os.path.isfile(f):
                 os.remove(f)
 
+    print(database1)
