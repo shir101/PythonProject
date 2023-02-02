@@ -311,7 +311,7 @@ if __name__ == '__main__':
         reps_of_lineage = lineage_reps_from_its_accessions(dict, 13)
         print("**************************")
         print("We can see here a dictionary of 1 lineage and its representative genomes")
-        database1.update({lineage: reps__lineage})
+        database1.update({lineage: reps_of_lineage})
 
         #delete the files in the data/raw of the lineage after inserting it to database1
         for filename in os.listdir(directory):
